@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.min.css">
+    <script src="js/main.js" defer async></script>
+    <title>Task List</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Liste de tâches</h1>
+        <div class="task-list">
+            <div class="new-task">
+                <h2>Nouvelle tâche</h2>
+                <form>
+                    <div class="taskName">
+                        <label for="taskName">Nom de la tâche :</label>
+                        <input type="text" id="taskName" name="taskName">
+                    </div>
+                    <div class="taskDate">
+                        <label for="taskDate">Date d'échéance :</label>
+                        <input type="date" id="taskDate" name="taskDate">
+                    </div>
+                    <div class="taskDesc">
+                        <label for="taskDesc">Description :</label>
+                        <textarea id="taskDesc" name="taskDesc"></textarea><br>
+                    </div>
+                    <button>Ajouter</button>
+                </form>
+            </div>
+            <div class="my-tasks">
+                <h2>Mes tâches</h2>
+                <div class="display-tasks">
+                    <div class="pending">
+                        <h3>En attente</h3>
+                        <div id="pending">
+                            <details>
+                                <summary>Exemple de tâche <i class="fa-solid fa-trash-can"></i></summary>
+                                <p>Date d'échéance : <time datetime="2023-03-10">10-03-2023</time></p>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex deserunt aspernatur provident corporis ullam quia nobis nisi praesentium iste ratione eaque reiciendis vel voluptatem, quibusdam fuga voluptatibus sit possimus aperiam.</p>
+                                <input type="checkbox" id="taskDone" name="taskDone" value="done">
+                                <label for="taskDone"> Tâche exécutée</label>
+                            </details>
+                            <h4>En retard</h4>
+                            <div class="late"></div>
+                        </div>
+                    </div>
+                    <div class="done">
+                        <h3>Tâches exécutées</h3>
+                        <div id="done">
+                            <details>
+                                <summary>Exemple de tâche 2 <i class="fa-solid fa-trash-can"></i></summary>
+                                <p>Date d'échéance : <time datetime="2023-03-10">10-03-2023</time></p>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde illo quo velit veritatis nam sit ipsum molestiae soluta iusto omnis cum accusantium, officia dignissimos placeat ut ducimus. Cumque, culpa ipsam!</p>
+                                <input type="checkbox" id="taskDone" name="taskDone" value="done" checked>
+                                <label for="taskDone"> Tâche exécutée</label>
+                            </details>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/8f9223cc2c.js" crossorigin="anonymous"></script> 
+</body>
+</html>
